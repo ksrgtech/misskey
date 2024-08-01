@@ -340,7 +340,8 @@ export class ApPersonService implements OnModuleInit {
 					uri: person.id,
 					tags,
 					isBot,
-					isCat: (person as any).isCat === true,
+					// ジョーク機能削除
+					isCat: false,
 					emojis,
 				})) as MiRemoteUser;
 
