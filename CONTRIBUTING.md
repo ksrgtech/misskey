@@ -1,11 +1,11 @@
 # Contribution guide
 > [!NOTE]
-> This is fork of Misskey. Please go to [upsteam](https://github.com/misskey-dev/misskey) unless you are really intended to work on this repository.
+> This Software is fork of Misskey. Please go to [Misskey](https://github.com/misskey-dev/misskey) unless you are really intended to work on This Software.
 
 ご興味をもっていただきありがとうございます。
 
 > [!NOTE]
-> このレポジトリではupstreamとは異なり、日本語を開発の第一言語とします。
+> このレポジトリではMisskeyとは異なり、日本語を開発の第一言語とします。
 
 ## 貢献
 このレポジトリはksrgtechが管理するレポジトリであり、故にksrgtechの思想が適用されます。
@@ -29,14 +29,14 @@ issueはforkの最新ブランチ上で解決した時点で閉じるものと�
 - Lintはマージ前にすべて解決される必要があります。
 	- Lintを回避することは原則禁止します。
 - テストケースは可能な限り追加してください。
-- issueが解決される場合、closing keywordをつけて参照してください。
+- issueが解決される場合、[closing keyword](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)をつけて参照してください。
 
 ## コミッターがなすべきこと
-- upstreamとは異なり、PRはマージコミットを伴うマージによって取り込むものとします。squash、及び`fork`ブランチのHEADへリベースしてからfast forwardする取り込みは禁止します。
+- Misskeyとは異なり、PRはマージコミットを伴うマージによって取り込むものとします。squash、及び`fork`ブランチのHEADへリベースしてからfast forwardする取り込みは禁止します。
   - これはbisectを容易にするための措置です。
 
 ## Release
-リリースバージョンはupstreamのバージョンに、`-` (半角ハイフン) を付け加え、その直後にセマンティックバージョニングに沿ったバージョンをつけるものとします。
+リリースバージョンはMisskeyのバージョンに、`-` (半角ハイフン) を付け加え、その直後にセマンティックバージョニングに沿ったバージョンをつけるものとします。
 
 ### Release Instructions
 1. Commit version changes in the `develop` branch ([package.json](package.json))
@@ -56,6 +56,9 @@ issueはforkの最新ブランチ上で解決した時点で閉じるものと�
 > - To distribute responsibility
 > - To check direct commits to develop
 > - To celebrate the release together 🎉
+
+### セマンティックバージョニングの範囲について
+* `INSTANCE_ROOT/i` 以下のスキーマはbackend及びfrontendのみが知る実装依存の詳細であり、セマンティックバージョニングの範囲ではありません。
 
 ## Development
 ### Setup
@@ -154,7 +157,7 @@ Misskey uses GitHub Actions for executing automated tests.
 Configuration files are located in [`/.github/workflows`](/.github/workflows).
 
 ## Vue
-Misskey uses Vue(v3) as its front-end framework.
+This Software uses Vue(v3) as its front-end framework.
 - Use TypeScript.
 - **When creating a new component, please use the Composition API (with [setup sugar](https://v3.vuejs.org/api/sfc-script-setup.html) and [ref sugar](https://github.com/vuejs/rfcs/discussions/369)) instead of the Options API.**
 	- Some of the existing components are implemented in the Options API, but it is an old implementation. Refactors that migrate those components to the Composition API are also welcome.
@@ -167,7 +170,7 @@ niraxは、Misskeyで使用しているオリジナルのフロントエンド�
 ルート定義は、以下の形式のオブジェクトの配列です。
 
 ```ts
-{
+type RootDefinition = {
 	name?: string;
 	path: string;
 	component: Component;
