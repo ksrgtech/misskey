@@ -48,11 +48,11 @@ export declare namespace UUIDv4 {
 		? S
 		: S extends `${infer SA}-${infer SB}-${infer SC}-${infer SD}-${infer SE}`
 			? SC extends `4${string}`
-				? [LengthS<SA>, LengthS<SB>, LengthS<SC>, LengthS<SD>, LengthS<SE>] extends [4, 8, 8, 8, 12]
+				? [LengthS<SA>, LengthS<SB>, LengthS<SC>, LengthS<SD>, LengthS<SE>] extends [8, 4, 4, 4, 12]
 					? [AssertHex<SA>, AssertHex<SB>, AssertHex<SC>, AssertHex<SD>, AssertHex<SE>] extends [string, string, string, string, string]
 						? S
 						: AssertionError<[AssertHex<SA>, AssertHex<SB>, AssertHex<SC>, AssertHex<SD>, AssertHex<SE>]>
-					: AssertionError<`component lengths are required to be [4, 8, 8, 8, 12], but are [${LengthS<SA>}, ${LengthS<SB>}, ${LengthS<SC>}, ${LengthS<SD>}, ${LengthS<SE>}]`>
+					: AssertionError<`component lengths are required to be [8, 4, 4, 4, 12], but are [${LengthS<SA>}, ${LengthS<SB>}, ${LengthS<SC>}, ${LengthS<SD>}, ${LengthS<SE>}]`>
 				: AssertionError<`${SC} contains invalid variant`>
 			: AssertionError<`${S} is not a hyphnated-UUIDv4`>
 
