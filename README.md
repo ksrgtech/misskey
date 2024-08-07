@@ -1,7 +1,9 @@
 <div align="center">
-**🌎 **This Software** is an open source, federated social media platform that's free forever forked from Misskey! 🚀**
+
+**🌎 **This Software** is an open source, federated social media platform that's free forever! 🚀**
 
 [Learn more about Misskey](https://misskey-hub.net/)
+</div>
 
 ---
 
