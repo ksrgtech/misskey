@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only OR MIT
  */
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 declare module Counter {
 	type Atom = [];
 	type Sequence = Atom[];
@@ -12,6 +13,7 @@ declare module Counter {
 	type Make<I extends number, C extends Sequence = []> = Current<C> extends I ? C : Make<I, Increase<C>>;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 declare module FoldableString {
 	type Chars<S extends string, Acc extends string[] = []> = string extends S ? never : S extends `${infer A}${infer B}` ? Chars<B, [...Acc, A]> : Acc
 
@@ -22,6 +24,7 @@ declare module FoldableString {
 			: Counter.Current<Acc>;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 declare module Hex {
 	const notHex: unique symbol;
 
@@ -38,6 +41,7 @@ declare module Hex {
 	type AssertionError<Message> = {[notHex]: Message}
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 export declare module UUIDv4 {
 	const notUUID: unique symbol;
 
