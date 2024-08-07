@@ -1,3 +1,7 @@
+/*
+ * SPDX-FileCopyrightText: 2024 ksrgtech
+ * SPDX-License-Identifier: AGPL-3.0-only or MIT
+ */
 import { describe } from '@jest/globals';
 import type { UUIDv4 } from '@/misc/uuid-validator.js';
 import { IdentifiableError } from '@/misc/identifiable-error.js';
