@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     env:
-      eslint-cache-version: v2
+      eslint-cache-version: v1
     strategy:
       matrix:
         workspace:
