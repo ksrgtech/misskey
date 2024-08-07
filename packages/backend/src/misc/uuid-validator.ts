@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2024 ksrgtech
  * SPDX-License-Identifier: AGPL-3.0-only OR MIT
  */
-declare namespace Counter {
+declare module Counter {
 	type Atom = [];
 	type Sequence = Atom[];
 	type Increase<S extends Sequence> = [...S, Atom];
@@ -11,7 +11,7 @@ declare namespace Counter {
 	type Make<I extends number, C extends Sequence = []> = Current<C> extends I ? C : Make<I, Increase<C>>;
 }
 
-declare namespace FoldableString {
+declare module FoldableString {
 	type Chars<S extends string, Acc extends string[] = []> = string extends S ? never : S extends `${infer A}${infer B}` ? Chars<B, [...Acc, A]> : Acc
 
 	type LengthS<S extends string, Acc extends Counter.Sequence = Counter.Make<0>> = string extends S
@@ -21,7 +21,7 @@ declare namespace FoldableString {
 			: Counter.Current<Acc>;
 }
 
-declare namespace Hex {
+declare module Hex {
 	const notHex: unique symbol;
 
 	type HexChar = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "a" | "b" | "c" | "d" | "e" | "f" | "A" | "B" | "C" | "D" | "E" | "F";
@@ -37,7 +37,7 @@ declare namespace Hex {
 	type AssertionError<Message> = {[notHex]: Message}
 }
 
-export declare namespace UUIDv4 {
+export declare module UUIDv4 {
 	const notUUID: unique symbol;
 
 	type AssertHex<S extends string> = Hex.Assert<S>;
