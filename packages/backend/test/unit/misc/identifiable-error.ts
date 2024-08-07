@@ -1,5 +1,5 @@
 import { describe } from '@jest/globals';
-import { UUIDv4 } from '@/misc/uuid-validator.js';
+import type { UUIDv4 } from '@/misc/uuid-validator.js';
 import { IdentifiableError } from '@/misc/identifiable-error.js';
 
 describe('identifiable-error', () => {
