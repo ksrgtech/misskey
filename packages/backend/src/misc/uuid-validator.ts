@@ -2,7 +2,6 @@
  * SPDX-FileCopyrightText: 2024 ksrgtech
  * SPDX-License-Identifier: AGPL-3.0-only OR MIT
  */
-
 // eslint-disable-next-line @typescript-eslint/no-namespace
 declare module Counter {
 	type Atom = [];
