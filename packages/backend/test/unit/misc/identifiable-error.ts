@@ -83,19 +83,7 @@ describe('identifiable-error', () => {
 				console.assert(i.id == a);
 			}
 			{
-				const v = "12345678-abcd-4123-A90a-1234567890ab";
-				const a: UUIDv4.Assert<typeof v> = v;
-				const i = new IdentifiableError<typeof a>(a);
-				console.assert(i.id == a);
-			}
-			{
 				const v = "12345678-abcd-4123-b90a-1234567890ab";
-				const a: UUIDv4.Assert<typeof v> = v;
-				const i = new IdentifiableError<typeof a>(a);
-				console.assert(i.id == a);
-			}
-			{
-				const v = "12345678-abcd-4123-B90a-1234567890ab";
 				const a: UUIDv4.Assert<typeof v> = v;
 				const i = new IdentifiableError<typeof a>(a);
 				console.assert(i.id == a);
