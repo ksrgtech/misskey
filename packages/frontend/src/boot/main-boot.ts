@@ -329,20 +329,5 @@ export async function mainBoot() {
 		});
 	}
 
-	// shortcut
-	const keymap = {
-		'p|n': () => {
-			if ($i == null) return;
-			post();
-		},
-		'd': () => {
-			defaultStore.set('darkMode', !defaultStore.state.darkMode);
-		},
-		's': () => {
-			mainRouter.push('/search');
-		},
-	} as const satisfies Keymap;
-	document.addEventListener('keydown', makeHotkey(keymap), { passive: false });
-
 	initializeSw();
 }
