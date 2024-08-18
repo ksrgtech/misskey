@@ -124,7 +124,6 @@ import { UserListEntityService } from './entities/UserListEntityService.js';
 import { FlashEntityService } from './entities/FlashEntityService.js';
 import { FlashLikeEntityService } from './entities/FlashLikeEntityService.js';
 import { RoleEntityService } from './entities/RoleEntityService.js';
-import { ReversiGameEntityService } from './entities/ReversiGameEntityService.js';
 import { MetaEntityService } from './entities/MetaEntityService.js';
 
 import { ApAudienceService } from './activitypub/ApAudienceService.js';
@@ -269,7 +268,6 @@ const $UserListEntityService: Provider = { provide: 'UserListEntityService', use
 const $FlashEntityService: Provider = { provide: 'FlashEntityService', useExisting: FlashEntityService };
 const $FlashLikeEntityService: Provider = { provide: 'FlashLikeEntityService', useExisting: FlashLikeEntityService };
 const $RoleEntityService: Provider = { provide: 'RoleEntityService', useExisting: RoleEntityService };
-const $ReversiGameEntityService: Provider = { provide: 'ReversiGameEntityService', useExisting: ReversiGameEntityService };
 const $MetaEntityService: Provider = { provide: 'MetaEntityService', useExisting: MetaEntityService };
 const $SystemWebhookEntityService: Provider = { provide: 'SystemWebhookEntityService', useExisting: SystemWebhookEntityService };
 
@@ -416,7 +414,6 @@ const $ApQuestionService: Provider = { provide: 'ApQuestionService', useExisting
 		FlashEntityService,
 		FlashLikeEntityService,
 		RoleEntityService,
-		ReversiGameEntityService,
 		MetaEntityService,
 		SystemWebhookEntityService,
 
@@ -559,7 +556,6 @@ const $ApQuestionService: Provider = { provide: 'ApQuestionService', useExisting
 		$FlashEntityService,
 		$FlashLikeEntityService,
 		$RoleEntityService,
-		$ReversiGameEntityService,
 		$MetaEntityService,
 		$SystemWebhookEntityService,
 
@@ -702,7 +698,6 @@ const $ApQuestionService: Provider = { provide: 'ApQuestionService', useExisting
 		FlashEntityService,
 		FlashLikeEntityService,
 		RoleEntityService,
-		ReversiGameEntityService,
 		MetaEntityService,
 		SystemWebhookEntityService,
 
@@ -844,7 +839,6 @@ const $ApQuestionService: Provider = { provide: 'ApQuestionService', useExisting
 		$FlashEntityService,
 		$FlashLikeEntityService,
 		$RoleEntityService,
-		$ReversiGameEntityService,
 		$MetaEntityService,
 		$SystemWebhookEntityService,
 
