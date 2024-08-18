@@ -19,7 +19,6 @@ import {
 	QueueStatsLog,
 	ServerStats,
 	ServerStatsLog,
-	ReversiGameDetailed,
 } from './entities.js';
 
 export type Channels = {
