@@ -7164,7 +7164,7 @@ export interface Locale extends ILocale {
          */
         "patrons": string;
         /**
-         * プロジェクトメンバー
+         * Misskeyのプロジェクトメンバー
          */
         "projectMembers": string;
     };

@@ -1749,8 +1749,6 @@ declare namespace entities {
         RoleLite,
         Role,
         RolePolicies,
-        ReversiGameLite,
-        ReversiGameDetailed,
         MetaLite,
         MetaDetailedOnly,
         MetaDetailed,
@@ -2770,12 +2768,6 @@ type ResetPasswordRequest = operations['reset-password']['requestBody']['content
 
 // @public (undocumented)
 type RetentionResponse = operations['retention']['responses']['200']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiGameDetailed = components['schemas']['ReversiGameDetailed'];
-
-// @public (undocumented)
-type ReversiGameLite = components['schemas']['ReversiGameLite'];
 
 // @public (undocumented)
 type Role = components['schemas']['Role'];
