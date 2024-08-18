@@ -1,6 +1,7 @@
 import type { operations } from './autogen/types.js';
 import type {
-	AbuseReportNotificationRecipient, Ad,
+	AbuseReportNotificationRecipient,
+	Ad,
 	Announcement,
 	EmojiDetailed,
 	Flash,
