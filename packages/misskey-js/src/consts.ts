@@ -161,18 +161,6 @@ export const moderationLogTypes = [
 	'deleteGalleryPost',
 ] as const;
 
-// See: packages/backend/src/core/ReversiService.ts@L410
-export const reversiUpdateKeys = [
-	'map',
-	'bw',
-	'isLlotheo',
-	'canPutEverywhere',
-	'loopedBoard',
-	'timeLimitForEachTurn',
-] as const;
-
-export type ReversiUpdateKey = typeof reversiUpdateKeys[number];
-
 type AvatarDecoration = UserLite['avatarDecorations'][number];
 
 type ReceivedAbuseReport = {
