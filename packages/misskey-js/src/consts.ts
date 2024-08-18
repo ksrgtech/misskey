@@ -1,7 +1,6 @@
 import type { operations } from './autogen/types.js';
 import type {
-	AbuseReportNotificationRecipient,
-	Ad,
+	AbuseReportNotificationRecipient, Ad,
 	Announcement,
 	EmojiDetailed,
 	Flash,
@@ -11,7 +10,6 @@ import type {
 	Note,
 	Page,
 	Role,
-	ReversiGameDetailed,
 	SystemWebhook,
 	UserLite,
 } from './autogen/models.js';
@@ -171,7 +169,7 @@ export const reversiUpdateKeys = [
 	'canPutEverywhere',
 	'loopedBoard',
 	'timeLimitForEachTurn',
-] as const satisfies (keyof ReversiGameDetailed)[];
+] as const;
 
 export type ReversiUpdateKey = typeof reversiUpdateKeys[number];
 

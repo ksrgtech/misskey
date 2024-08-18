@@ -2815,36 +2815,6 @@ type ReversiGameDetailed = components['schemas']['ReversiGameDetailed'];
 type ReversiGameLite = components['schemas']['ReversiGameLite'];
 
 // @public (undocumented)
-type ReversiGamesRequest = operations['reversi___games']['requestBody']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiGamesResponse = operations['reversi___games']['responses']['200']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiInvitationsResponse = operations['reversi___invitations']['responses']['200']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiMatchRequest = operations['reversi___match']['requestBody']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiMatchResponse = operations['reversi___match']['responses']['200']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiShowGameRequest = operations['reversi___show-game']['requestBody']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiShowGameResponse = operations['reversi___show-game']['responses']['200']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiSurrenderRequest = operations['reversi___surrender']['requestBody']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiVerifyRequest = operations['reversi___verify']['requestBody']['content']['application/json'];
-
-// @public (undocumented)
-type ReversiVerifyResponse = operations['reversi___verify']['responses']['200']['content']['application/json'];
-
-// @public (undocumented)
 type Role = components['schemas']['Role'];
 
 // @public (undocumented)
